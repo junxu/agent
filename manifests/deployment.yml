@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "xujunk8s1-4119"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "xujunk8s1-4119"
+    spec:
+      containers:
+        - name: "xujunk8s1-4119"
+          image: "xujunregistry.azurecr.io/xujunk8s1"
+          ports:
+          - containerPort: 80
